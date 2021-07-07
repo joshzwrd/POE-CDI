@@ -33,7 +33,7 @@ Configurer l’adresse IP de la carte réseau du serveur de façon statique
 
 **DNS Server :** Résolveurs DNS
 
-**Start IP Address **: Début de la plage d’adresse
+**Start IP Address :** Début de la plage d’adresse
 
 **Max number of users :** Nombre d’hôtes à adresser
 
@@ -48,11 +48,11 @@ Résout les noms symboliques en adresses IP
 
 **FQDN :** Fully Qualified Domain Name : Nom de domaine pleinement qualifié
 
-Nom d’ordinateur : PC1 Nom NetBIOS
+    Nom d’ordinateur : PC1 Nom NetBIOS
 
-Domaine : m2i.net Nom de domaine (Suffixe DNS)
+    Domaine : m2i.net Nom de domaine (Suffixe DNS)
 
-FQDN : PC1.m2i.net
+    FQDN : PC1.m2i.net
 
 
 **Qu'est-ce qu'un serveur DNS ?**
