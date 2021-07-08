@@ -58,3 +58,28 @@ Résout les noms symboliques en adresses IP
 **Qu'est-ce qu'un serveur DNS ?**
 
 Le serveur DNS (**Domain Name System**, ou **Système de noms de domaine** en français) est un service dont la principale fonction est de **traduire** un nom de domaine en **adresse IP**. Pour simplifier, le serveur DNS agit comme **un annuaire** que consulte un ordinateur au moment d'accéder à un autre ordinateur **via un réseau**. Autrement dit, le serveur DNS est ce service qui permet **d'associer à site web** (ou **un ordinateur connecté ou un serveur**) une **adresse IP**, comme un annuaire téléphonique permet d'associer un numéro de téléphone à un nom d'abonné.
+
+
+## HTTP
+
+**A quoi sert le Protocole http ?**
+
+Il permet d'afficher des pages web,**HTTP (Hypertext Transfer Protocol)**est l'ensemble de règles régissant le transfert de fichiers (texte, images, son, vidéo, et autres fichiers multimédias) sur le Web. Dès qu'un utilisateur se connecte au Web et ouvre un navigateur, il utilise indirectement le protocole HTTP.
+
+HyperText Transfer Protocol
+
+Communication entre un client et un Serveur Web
+
+**Protocole HTTP : Port 80**
+
+Aujourd’hui, tous les sites Web sont passés en HTTPS, (http Sécurisé / http SSL)
+
+Protocole HTTPS : Port 443
+
+Microsoft : IIS (Internet Information Services)
+
+Linux : Apache 2, NginX
+
+**Remarque :**
+
+La configuration IP d’un serveur (quel qu’il soit) se fait toujours de façon, statique (et non en dynamique) pour éviter que l’IP ne change
