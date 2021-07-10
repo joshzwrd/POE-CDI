@@ -24,5 +24,6 @@ Pour joindre le réseau 25.12.10.0/24, on doit sortir par l'interface FA2/0
 	ou 	Router(config)# ip route 25.12.10.0 255.255.255.0 20.20.20.254
 
 Pour joindre le réseau 35.12.10.0/24, on doit sortir par l'interface FA1/0
-		Router(config)# ip route 35.12.10.0 255.255.255.0 fa1/0
-		Router(config)# ip route 35.12.10.0 255.255.255.0 30.30.30.254
+
+        Router(config)# ip route 35.12.10.0 255.255.255.0 fa1/0
+        Router(config)# ip route 35.12.10.0 255.255.255.0 30.30.30.254
