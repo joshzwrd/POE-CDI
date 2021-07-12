@@ -1,0 +1,1 @@
+**Distribution =** Version spécifique de GNU/Linux
