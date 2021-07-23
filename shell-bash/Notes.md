@@ -181,7 +181,7 @@ Permettent :
 
 On imagine qu’on dispose d’une variable :
 
-$personnage="martin;dupont;47 ans;paris;développeur"
+    $personnage="martin;dupont;47 ans;paris;développeur"
 
 On souhaite séparer les champs/valeurs de cette variable. C’est possible grâce à la commande cut
 
