@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Le Spoiler Alert</title>
+</head>
+<body>
+
+    <p >
+            3endi sem fi dem
+        Gros, j'suis loin de Gandhi,<br>
+        que des bandits dans le sound system
+        Si toi, tu nous as menti, trahison <br>
+        ça sera pas joli pour ceux qui t'aiment
+        Gros, gros chez nous, y a pas d'week-end, cc, mafia napolitaine (CC)
+    </p>
+
+    
+    <p >
+        Yavrum, bu kaçıncı söz?
+        Söz uçar bunu kenara yaz<br>
+        Yaz olur geçer kalır hep buz
+        Üşütür bu ne biçim his, his, his, his?<br>
+        Tutamadım ben de az
+        Tutamadım söz ama sus, sus, sus<br>
+        Yavrum, bu kaçıncı
+        Söz, söz, söz, sö-öz, sö-ö-ö-öz?
+
+    </p>
+
+
+    <p>
+                ਮਿੱਠੀਆਈ like ਕੁਲਫ਼ੀ
+        ਰਸ ਮਲਾਈ ਪਿਸਤਾ ਬਰਫੀ<br>
+        ਸਰਦੀਆ ਵਿਚ ਗਰਮੀ ਲਗਦੀ
+        ਜਦ ਵੀ ਤੂ ਮੇਰੇ ਰਾਹ ਵਿਚੋਂ ਚਲਦੀ<br>
+        Yeah club ਵਿਚ ਮੇਰੇ ਕੋਲੋ ਲੰਘਦੀ
+        ਮਿੱਠੀਆਈ like ਕੁਲਫ਼ੀ<br>
+        ਰਸ ਮਲਾਈ ਪਿਸਤਾ ਬਰਫੀ
+        ਸਰਦੀਆ ਵਿਚ ਗਰਮੀ ਲਗਦੀ<br>
+        ਜਦ ਵੀ ਤੂ ਮੇਰੇ ਰਾਹ ਵਿਚੋਂ ਚਲਦੀ
+        Yeah club ਵਿਚ ਮੇਰੇ ਕੋਲੋ ਲੰਘਦੀ
+    </p>
+
+    <p>
+            All these pussy niggas so bad mind
+        Spotlight, moonlight<br>
+        Nigga, why you trippin'? Get your mort right
+        Shawty look good in the moonlight<br>
+        All these pussy niggas so bad mind
+        Spotlight, uh, moonlight<br>
+        Nigga, why you trippin'? Get your mood right, uh
+        Shawty look good in the moonlight<br>
+        All these pussy niggas so bad mind
+        Spotlight, moonlight
+    </p>
+
+    <p>
+        يغيضني الزوالي يقيسني ويشيدلي حالي
+        ديما في بالي وما نبغي القليل ينذل<br>
+        يغيضني الزوالي يقيسني ويشيدلي حالي
+        ديما في بالي وما نبغي القليل ينذل<br>
+        بلا ما نسأل راك ما خليت فيا عقل
+        نشوفك نهبل نهز على راسي نهمل، هكذا عرفونيا
+    </p>    
+
+    <script>
+
+        var Paragraphe = document.querySelectorAll("p")
+
+        Paragraphe.forEach(function(element) {
+            if(element.innerHTML.indexOf("mort") == -1 && element.innerHTML.indexOf("trahison") == -1) {
+                element.classList = "aqua"
+            } else {
+                
+                element.innerHTML = "Attention spoiler" + element.innerHTML
+                element.classList = "red"
+            }
+        });
+
+    </script>
+    
+</body>
+</html>

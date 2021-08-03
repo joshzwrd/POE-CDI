@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        function addition(nombre1, nombre2) {
+            return isNaN(nombre1) || isNaN(nombre2) ? false : nombre1+nombre2
+        }
+
+        function multiplication(nombre1, nombre2) {
+            return isNaN(nombre1) || isNaN(nombre2) ? false : nombre1*nombre2
+        }
+
+        function soustraction(nombre1, nombre2) {
+            return isNaN(nombre1) || isNaN(nombre2) ? false : nombre1-nombre2
+        }
+
+        function division(nombre1, nombre2) {
+            return isNaN(nombre1) || isNaN(nombre2) || nombre2 == 0 ? false : nombre1/nombre2
+        }
+
+        var nombre1 = Number(prompt("Nombre 1"))
+        var nombre2 = Number(prompt("Nombre 2"))
+
+        // console.log("1 + 3 = " + addition(1, 3))
+        // console.log("2 x 3 = " + multiplication(2, 3))
+        // console.log("5 - 2 = " + soustraction(5,2))
+        // console.log("10 / 5 = " + division(10, 5))
+
+        console.log("Addition : " + nombre1 + " + " + nombre2 + " = " + addition(nombre1, nombre2))
+        console.log("Multiplication : " + nombre1 + " x " + nombre2 + " = " + multiplication(nombre1, nombre2))
+        console.log("Soustraction : " + nombre1 + " - " + nombre2 + " = " + soustraction(nombre1, nombre2))
+        console.log("Division : " + nombre1 + " / " + nombre2 + " = " + division(nombre1, nombre2))
+
+    </script>
+</body>
+</html>

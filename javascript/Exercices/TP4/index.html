@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La calculatrice</title>
+</head>
+<body>
+
+    <h1></h1>
+
+    <script>
+
+        function addition (n1,n2) {
+            if(isNaN(n1) || isNaN(n2)){
+                return false;
+            }
+
+            return n1 + n2;
+        }
+
+        function soustraction (n1,n2) {
+            if(isNaN(n1) || isNaN(n2)){
+                return false;
+            }
+
+            return n1 - n2;
+        }
+
+        function multiplication (n1,n2) {
+            if(isNaN(n1) || isNaN(n2)){
+                return false;
+            }
+
+            return n1 * n2;
+        }
+
+        function division (n1,n2) {
+            if(isNaN(n1) || isNaN(n2) || n2 == 0 ){
+                return false;
+            }
+
+            return n1 / n2;
+        }
+
+
+        console.log(addition(2,5));
+        console.log(soustraction(2,5));
+        console.log(multiplication(2,5));
+        console.log(division(2,0));
+
+    </script>
+
+    
+</body>
+</html>

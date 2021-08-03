@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .bleuClair {
+            background-color: rgb(129, 189, 238);
+        }
+
+        .rougeClair {
+            background-color: rgb(250, 162, 162);
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <p>Lorem Ipsum 1</p>
+
+    <p>Lorem Ipsum 2</p>
+
+    <p>Lorem Ipsum mort</p>
+
+    <p>Lorem Ipsum 4</p>
+
+    <p>Lorem Ipsum trahison</p>
+
+    <script>
+
+// 2eme possibilité
+
+        var elementsP = document.querySelectorAll("p")
+
+        elementsP.forEach(function(element) {
+            if(element.innerHTML.indexOf("mort") == -1 && element.innerHTML.indexOf("trahison") == -1) {
+                // element.style.backgroundColor = "lightblue"
+                element.className = "bleuClair"
+            } else {
+                // element.innerHTML = "SPOILER ALERT ! " + element.innerHTML
+                element.insertAdjacentHTML('afterbegin', "SPOILER ALERT ! ")
+                // element.style.backgroundColor = "lightred"
+                element.className = "rougeClair"
+            }
+        });
+
+
+        var elementsP = document.querySelectorAll("p")
+
+        elementsP.forEach(function(element) {
+            if(element.innerHTML.indexOf("mort") > -1 && element.innerHTML.indexOf("trahison") > -1) {
+                // element.style.backgroundColor = "lightblue"
+                element.className = "bleuClair"
+                // element.innerHTML = "SPOILER ALERT ! " + element.innerHTML
+                element.insertAdjacentHTML('afterbegin', "SPOILER ALERT ! ")
+                // element.style.backgroundColor = "lightred"
+            } else {
+                element.className = "rougeClair"
+            }
+        });
+
+
+
+    </script>
+    
+</body>
+</html>
