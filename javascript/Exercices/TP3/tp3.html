@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        function moyenneTableau(monTableau) {
+            var total = 0
+
+            monTableau.forEach((element) => {
+                total += element
+            });
+
+            // for(let valeur of monTableau) {
+            //     total += valeur
+            // }
+
+            // for(let i = 0; monTableau.length; i++) {
+            //     total += monTableau[i]
+            // }
+           
+            return total / monTableau.length
+        }
+        
+        function degreCelsiusFar(temperature) {
+            return temperature * 1.8 + 32
+        }
+
+
+        var tableau = [0, 1, 2, 5, 6]
+        var temperatureFar = []
+
+        console.log("Avant ajout : " + tableau)
+        tableau.push(parseInt(prompt("Ajouter une température supplémentaire : "), 10))
+        console.log("Après ajout : " + tableau)
+
+        for (let i = 0; i < tableau.length; i++) {
+            tableau[i] = parseInt(prompt("Saisir une température [" + i + "] : "), 10)
+            temperatureFar.push(degreCelsiusFar(tableau[i]))
+        }
+
+        for (let i = 0; i < tableau.length; i++) {
+            console.log(tableau[i])
+        }
+
+        console.log("Tableau avant modif : " + tableau)
+        console.log("Moyenne température : " + moyenneTableau(tableau))
+
+        var temperature = prompt("Quelle température souhaitez-vous supprimer ?")
+
+        while (tableau.indexOf(temperature) !== -1) {
+            if (tableau.indexOf(temperature) !== -1) {
+                tableau.splice(tableau.indexOf(temperature), 1)
+                alert("La température a été retiré du tableau")
+            } else {
+                alert("La température n'existe pas, veuillez saisir une température existante")
+                temperature = prompt("Saisir une température existante : ")
+            }
+        }
+
+        console.log("Tableau après modif : " + tableau)
+
+        console.log("Tableau Deg Far : " + temperatureFar)
+
+        alert("+ petite valeur du tableau : " + Math.max(...tableau))
+        alert("+ grande valeur du tableau : " + Math.min(...tableau))
+
+        
+
+    </script>
+</body>
+
+</html>

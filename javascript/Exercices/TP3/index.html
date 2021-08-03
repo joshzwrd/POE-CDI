@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>températures</title>
+</head>
+<body>
+
+    <h1></h1>
+
+    <script>
+
+        var Ttemp = [22, 26, 30];
+
+        Ttemp.push(33);
+
+        console.log(Ttemp);
+
+        Ttemp.splice(2, 1);
+
+        for (var i = 0; i < Ttemp.length; i++){
+            console.log(Ttemp[i]);
+        }
+
+        let notes = 0;
+
+        for (var i = 0; i < Ttemp.length; i++){
+            notes = notes + Ttemp[i];
+        };
+
+        console.log('Moyenne des températures : ' + (notes / Ttemp.length));
+
+        console.log(Math.min(...Ttemp));
+        console.log(Math.max(...Ttemp));
+
+    </script>
+    
+</body>
+</html>
