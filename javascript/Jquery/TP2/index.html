@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <title>Fentre Modal</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item ">
+                        <a class="nav-link active" id="link1">Bloc 1</a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a class="nav-link active" id="link2">Bloc 2</a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a class="nav-link active" id="link3">Bloc 3</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active" id="link4">Bloc Modal</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-6 col-sm-6" class="offset" id="bloc1">
+                <h3>Why do we use it?</h3>
+                <p>There are many variations of passages of Lorem Ipsum available,
+                    but the majority have suffered alteration in some form, by injected humour,
+                    or randomised words which don't look even slightly believable.</p>
+
+            </div>
+
+            <div class="col-6 col-sm-3" id="bloc2">
+                <h3>Da dove viene?</h3>
+                <p>Al contrario di quanto si pensi, Lorem Ipsum non è semplicemente una sequenza casuale di caratteri.
+                    Risale ad un classico della letteratura latina del 45 AC, cosa che lo rende vecchio di 2000 anni.
+                    Richard McClintock,</p>
+            </div>
+
+            <div class="col-6 col-sm-3" id="bloc3">
+                <h3>Neden Kullanırız?</h3>
+                <p>Yinelenen bir sayfa içeriğinin okuyucunun dikkatini dağıttığı bilinen bir gerçektir.
+                    Lorem Ipsum kullanmanın amacı, sürekli 'buraya metin gelecek, buraya metin gelecek'
+                    yazmaya kıyasla daha dengeli bir harf dağılımı sağlayarak okunurluğu artırmasıdır.</p>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-6 col-sm-2">
+                <h4>¿Por qué lo usamos?</h4>
+                <p>Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles.</p>
+
+            </div>
+
+            <div class="col-6 col-sm-6 offset-lg-4 ">
+                <h3>Neden Kullanırız?</h3>
+                <p>Yinelenen bir sayfa içeriğinin okuyucunun dikkatini dağıttığı bilinen bir gerçektir.
+                    Lorem Ipsum kullanmanın amacı, sürekli 'buraya metin gelecek, buraya metin gelecek'
+                    yazmaya kıyasla daha dengeli bir harf dağılımı sağlayarak okunurluğu artırmasıdır.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="modal-container" id="modalContainer">
+        <div class="modal-content" id="modalContent">
+            <!--     <h3>Ma nouvelle playlist</h3>
+             <p>
+                Dinos - Corbillard, Rich the kid - Prada, G2B - Monica <br>
+                NSG - Porshe, B Young - Differences, OJ Billz - Givenchy<br>
+                G2B - Monica, ,Dinos - Corbillard OJ Billz - Givenchy<br>
+                B Young - Differences, Rich the kid - Prada, NSG - Porshe <br>
+
+            </p> -->
+
+
+        </div>
+
+
+
+    </div>
+
+    <script>
+        $("#link1").click(function () {
+            $('#bloc1').hide(3000);
+        });
+
+        $("#link2").click(function () {
+            $('#bloc2').hide(3000);
+        });
+
+        $("#link3").click(function () {
+            $('#bloc3').hide(3000);
+        });
+
+        // let modalContainer = document.createElement('div');
+        // let modalContent = document.createElement('div');
+
+        let eh3 = $("<h4>").text("Cos’è dove Da ?");
+
+        let txt1 = $("<p>").text(
+            'Esistono innumerevoli variazioni dei passaggi del Lorem Ipsum, ma la maggior parte hanno subito delle variazioni del tempo, a causa dell’inserimento di passaggi ironici, o di sequenze casuali di caratteri palesemente poco verosimili. '
+            );
+
+        let Cbtn = $('<button>').attr({
+            class: 'button1'
+        }).text("Close");
+        // text("close");
+
+        Cbtn.ClassName = "button1"
+
+        $('#link4').click(function () {
+
+            $('#modalContent').append(eh3, txt1, Cbtn);
+            $('#modalContainer').css('display', 'flex');
+        })
+    </script>
+
+
+</body>
+
+</html>

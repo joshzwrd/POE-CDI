@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+
+    <title>jQuery createElement</title>
+
+</head>
+
+
+<body>
+
+
+
+</body>
+
+<script>
+    function appendText() {
+        var txt1 = "<p>Text.</p>"; // Create element with HTML 
+        var txt2 = $("<p></p>").text("Text."); // Create with jQuery
+        var txt3 = document.createElement("p"); // Create with DOM
+        txt3.innerHTML = "Text.";
+        $("body").append(txt1, txt2, txt3); // Append the new elements
+    }
+</script>
+
+<!-- 
+// let modalContainer = document.createElement('div');
+let modalContent = document.createElement('div');
+
+let eh3 = document.createElement("h3");
+eh3.innerHTML = "Ma nouvelle playlist";
+
+let txt3 = document.createElement("p");
+txt3.innerHTML = "Dinos - Corbillard, Rich the kid - Prada, G2B - Monica NSG - Porshe, B Young - Differences, OJ Billz -
+Givenchy G2B - Monica, ,Dinos - Corbillard OJ Billz - GivenchyB Young - Differences, Rich the kid - Prada, NSG -
+Porshe";
+
+// let txt1 = $("<>
+    </p>").text('Dinos - Corbillard, Rich the kid - Prada, G2B - Monica NSG - Porshe, B Young - Differences, OJ Billz -
+    Givenchy G2B - Monica, ,Dinos - Corbillard OJ Billz - GivenchyB Young - Differences, Rich the kid - Prada, NSG -
+    Porshe');
+    $('#modalContent').append(eh3, txt3);
+
+    $('#modalContainer').append() -->
+
+
+</html>
