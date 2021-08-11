@@ -1,0 +1,89 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btn {
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.button-clear {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.button-clear:hover,  .button-clear:focus{
+    transform: scale(1.2);
+    color: white;
+}
+
+.right-button-1 {
+    position: fixed;
+    right: 20px;
+}
+
+.right-button-2 {
+    position: fixed;
+    right: 20px;
+    top: calc(10vh + 80px);
+}
+
+.right-button-3 {
+    position: fixed;
+    right: 20px;
+    top: calc(10vh + 140px);
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btn {
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.button-clear {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.button-clear:hover,  .button-clear:focus{
+    transform: scale(1.2);
+    color: white;
+}
+
+.right-button-1 {
+    position: fixed;
+    right: 20px;
+}
+
+.right-button-2 {
+    position: fixed;
+    right: 20px;
+    top: calc(10vh + 80px);
+}
+
+.right-button-3 {
+    position: fixed;
+    right: 20px;
+    top: calc(10vh + 140px);
+}
+
+.right-button-4 {
+    position: fixed;
+    right: 20px;
+    top: calc(10vh + 200px);
+}
+
+input {
+    margin-bottom: 20px;
+}
