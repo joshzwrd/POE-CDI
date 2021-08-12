@@ -1,0 +1,83 @@
+
+.divTable{
+    justify-content: center;
+    display: flex;
+}
+
+.table-content{
+    max-width: 80vw;
+    border-collapse: collapse;
+}
+
+.table-content th{
+    border: 1px solid aliceblue;
+    background-color: rgba(70,130,180, 0.50);
+    color: aliceblue;
+    padding: 10px;
+}
+
+.table-content td{
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    padding: 10px;
+
+}
+
+
+
+/* BUTTON  */
+
+.button1 {
+
+    background-color: #F08080;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    border: 1px solid aliceblue;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px;
+    border-radius: 5px;
+    transition: all 0.4s ease-in 0s;
+    box-shadow: 1px 2px 3px #444;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+
+.button1::before{
+    content: '';
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(248, 248, 248);
+    border-radius: 50% 50% 0 0;
+    transition: all .5s;
+    z-index: -1;
+
+}
+
+.button1:hover
+{
+    background: rgba(0, 0, 0, 0.20);
+    color: rgba(70,130,180, 0.8);
+    text-decoration: none;
+    box-shadow: 2px 3px 7px #F08080;
+
+}
+
+.button1:hover::before
+{
+    top: 0;
+    border-radius: 0;
+
+}
+
+.button1:active
+{
+    background-color: #F08080; 
+    color: #F08080; 
+    transition: all 0.1s ease-in 0s;
+    box-shadow: 1px 2px 3px #444; 
+}
