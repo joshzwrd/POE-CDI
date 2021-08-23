@@ -84,7 +84,7 @@ INSERT INTO flotte.Pilote(brevet, nom, nbHVol, compa)
 VALUES('PL-2', 'Martin', 62, 'AF');
 ```
 
--- Créer un index sur la colonne ville de la table Compagnie
+- Créer un index sur la colonne ville de la table Compagnie
 
 ```sql
 CREATE INDEX idx_ville ON flotte.Compagnie(ville(3));
