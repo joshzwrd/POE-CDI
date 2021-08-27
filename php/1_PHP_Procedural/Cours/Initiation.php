@@ -9,7 +9,7 @@
 echo "Hello World!";
 
 
-/ Ceci est un commentaire mono-ligne
+// Ceci est un commentaire mono-ligne
 
 # Ceci est aussi un commentaire mono-ligne
 
@@ -130,7 +130,7 @@ echo $key . " : " . $value . "\n";
 
 # Sensibilité à la casse
 
-CHO "Bonjour!<br>";
+ECHO "Bonjour!<br>";
 echo "Bonjour!<br>";
 EcHo "Bonjour!<br>";
 
