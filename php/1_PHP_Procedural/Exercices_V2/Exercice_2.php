@@ -32,12 +32,14 @@
         $age = $_POST['age'];
         $email = $_POST['email'];
 
-        if (!empty($name) || empty($age) || empty($email)) {
-            echo "<span style=\"color:red; font-weight: bold;\"> Veuillez remplir tous les champs!</span>";
-        }else
-
-        {
+        if (!empty($name) && !empty($age) && !empty($email)) {
+            
             echo "<span style=\"color:green; font-weight: bold;\">Les données ont bien été envoyées<br></span>";
+
+        }else
+        
+        {
+            echo "<span style=\"color:red; font-weight: bold;\"> Veuillez remplir tous les champs!</span>";
         }
     }
 
