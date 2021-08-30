@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-<body>
 
 
 <!-- Premier code en PHP -->
@@ -40,6 +39,8 @@ echo "Hello, I am " . $name . " and I'm " . $age . " years old ^^"
 
 
 // VARIABLES :
+
+
 
 $name = 'Luka';
 $avg = 19.11;
@@ -169,5 +170,4 @@ echo array_rand($array) . "<br />"
 
 ?>
 
-</body>
 </html>
