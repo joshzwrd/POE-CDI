@@ -18,12 +18,27 @@ qui s’étend sur plusieurs
 lignes
 */
 
+?>
+
+
+
+
+<?php
+
 # VARIABLES :
 
 $name = 'Luka';
 $avg = 19.11;
 $max = 20;
 $admission = true;
+
+
+?>
+
+
+
+
+<?php
 
 # La concaténation
 
@@ -34,6 +49,12 @@ echo "Hello, I am $name and I'm $age years old ^^";
 echo "<br />";
 echo "Hello, I am " . $name . " and I'm " . $age . " years old ^^"
 
+
+?>
+
+
+
+<?php
 
 # Les conditions
 
@@ -55,6 +76,12 @@ echo "Congratulations $name ! You have a general average of $avg/$max ^^";
 echo "Sorry $name ! You are not admitted !";
 }
 
+?>
+
+
+
+<?php
+
 # Les ternaires 
 
 // VARIABLES :
@@ -67,6 +94,13 @@ $admission = true;
 // TERNARY CONDITIONS :
 $msg = $admission == true ? "Congratulations" : "You are not admitted !";
 echo $msg;
+
+
+?>
+
+
+
+<?php
 
 # Les conditions
 
@@ -87,6 +121,12 @@ case false:
 echo "Sorry $name ! You are not admitted !";
 break;
 }
+
+?>
+
+
+
+<?php
 
 # Les tableaux 
 
