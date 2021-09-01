@@ -1,4 +1,4 @@
-a<?php
+<?php
 
 $servername = "localhost";
 $username = "root";
@@ -12,7 +12,7 @@ $sql = "SELECT id, title, author FROM books";
 $result = mysqli_query($conn, $sql);
 
 $rows = $result->fetch_all(MYSQLI_ASSOC);
-var_dump($rows);
+// var_dump($rows);
 ?>
 
 <table border="1" width="100%">
@@ -21,6 +21,7 @@ var_dump($rows);
         <th>ID</th>
         <th>TITLE</th>
         <th>AUTHOR</th>
+        <th>EDIT</th>
     </tr>
 
     <!-- <td><input type="submit" name="modify" value="Modifier"></td>
@@ -36,7 +37,8 @@ var_dump($rows);
         <td>" . $row["title"] . "</td>
         <td>" . $row["author"] . "</td>
 
-        <td><a href='./delete.php?rn=$row[id]'>Delete</a></td>
+        <td><a href='./delete.php?=$row[id]'>Delete</a>
+        <a href='./update.php?id=$row[id]&title=$row[title]&author=$row[author]'>Update</a></td>
         </tr>
         ";
     }
