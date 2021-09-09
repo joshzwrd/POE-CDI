@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<iut>
+
+    <etudiant id="e111" nom="Josh">
+        <uv>
+            <nom>TCP/IP</nom>
+            <duree>2 semaines</duree>
+            <note>18</note>
+        </uv>
+        <uv>
+            <nom>Linux</nom>
+            <duree>3 semaines</duree>
+            <note>12</note>
+        </uv>
+    </etudiant>
+
+    <etudiant id="e222" nom="Ina">
+        <uv>
+            <nom>HTML/CSS</nom>
+            <duree>1 semaines</duree>
+            <note>17</note>
+        </uv>
+        <uv>
+            <nom>JavaScript</nom>
+            <duree>2 semaines</duree>
+            <note>14</note>
+        </uv>
+    </etudiant>
+
+    <etudiant id="e333" nom="Jakarta">
+        <uv>
+            <nom>PHP</nom>
+            <duree>4 semaines</duree>
+            <note>14</note>
+        </uv>
+        <uv>
+            <nom>MySQL</nom>
+            <duree>3 semaines</duree>
+            <note>16</note>
+        </uv>
+    </etudiant>
+
+    <etudiant id="e444" nom="João">
+        <uv>
+            <nom>Laravel</nom>
+            <duree>2 semaines</duree>
+            <note>14</note>
+        </uv>
+        <uv>
+            <nom>Angular</nom>
+            <duree>2 semaines</duree>
+            <note>16</note>
+        </uv>
+    </etudiant>
+
+
+</iut>

@@ -1,0 +1,9 @@
+<!ELEMENT livres (livre)+>
+<!ELEMENT livre (auteur,titre,annee)>
+<!ELEMENT auteur (#PCDATA)>
+<!ELEMENT titre (#PCDATA)>
+<!ELEMENT annee (#PCDATA)>
+
+<!ATTLIST auteur nationalite CDATA #REQUIRED>
+<!ATTLIST titre ref ID #REQUIRED>
+<!ATTLIST titre lang (fr|ar|en) #REQUIRED>

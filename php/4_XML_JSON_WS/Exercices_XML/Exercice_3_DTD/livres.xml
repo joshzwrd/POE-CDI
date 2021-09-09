@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE livres SYSTEM "livres.dtd">
+
+<livres>
+
+    <livre>
+        <auteur nationalite="Française">Luc Barry</auteur>
+        <titre ref="cr001" lang="fr">L'Histoire de France</titre>
+        <annee>2009</annee>
+    </livre>
+
+    <livre>
+        <auteur nationalite="Algérienne">Sara VH</auteur>
+        <titre ref="cr002" lang="ar">La psychanalyse</titre>
+        <annee>2013</annee>
+    </livre>
+
+    <livre>
+        <auteur nationalite="Italienne">Alain CJ</auteur>
+        <titre ref="cr003" lang="en">La vision optimiste</titre>
+        <annee>2017</annee>
+    </livre>
+
+</livres>
