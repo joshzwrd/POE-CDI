@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<technologies>
+
+    <langages>
+        <langage>
+            <nom>PHP</nom>
+            <type>Backend</type>
+            <version>7</version>
+            <developpeur>PHP Group</developpeur>
+            <openSource>Oui</openSource>
+        </langage>
+
+        <langage>
+            <nom>HTML</nom>
+            <type>Frontend</type>
+            <version>5</version>
+            <developpeur>WaC</developpeur>
+            <openSource>Non</openSource>
+        </langage>
+    </langages>
+
+    <frameworks>
+        <framework>
+            <nom>Struts</nom>
+            <type>Backend</type>
+            <version>1.3</version>
+            <developpeur>Apache</developpeur>
+            <openSource>Non</openSource>
+        </framework>
+
+        <framework>
+            <nom>React</nom>
+            <type>Frontend</type>
+            <version>16</version>
+            <developpeur>Facebook</developpeur>
+            <openSource>Oui</openSource>
+        </framework>
+    </frameworks>
+
+    <cmss>
+        <cms>
+            <nom>Joomla</nom>
+            <type>FullStack</type>
+            <version>3.8</version>
+            <developpeur>OSMatters</developpeur>
+            <openSource>Non</openSource>
+        </cms>
+        <cms>
+            <nom>eZ Publish</nom>
+            <type>FullStack</type>
+            <version>5</version>
+            <developpeur>eZ Systeme</developpeur>
+            <openSource>Non</openSource>
+        </cms>
+    </cmss>
+</technologies>
