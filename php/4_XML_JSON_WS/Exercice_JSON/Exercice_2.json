@@ -1,0 +1,25 @@
+
+{      "mesMessages": [
+
+            {
+                "objet": "home",
+                "destinataire": "Ina Chaton",
+                "expediteur": "Jakarta",
+                "date": "09/09/2021",
+                "contenu": "Tu a mangé ma patée",
+                "categories": [
+                                {"nom": "maison"},
+                                {"nom":"personnel"}],
+                "important": "non"
+            },
+            {
+                "objet": "home",
+                "destinataire": "Mohammed Bahri",
+                "expediteur": "Josh",
+                "date": "10/09/2021",
+                "contenu": "J'ai fini les 2 premiers exercices de JSON",
+                "categories": [{"nom": "professionnel"}],
+                "important": "oui"
+            } ]
+
+}
